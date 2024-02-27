@@ -12,5 +12,7 @@ int main() {
 
     int array2[3] = {0,1,4};
     std::cout << "The number is: " << count(array2, 3) << std::endl;
-    return 0;
+
+    int array3[2] = {1,5};
+    std::cout << "The number is: " << count(array3, 2) << std::endl;    return 0;
 }
