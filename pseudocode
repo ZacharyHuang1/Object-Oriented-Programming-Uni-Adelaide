@@ -1,0 +1,9 @@
+FUNCTION ConvertToBinary(decimalNumber)
+    binaryNumber = ""
+    WHILE decimalNumber > 0
+        remainder = decimalNumber MOD 2
+        binaryNumber = remainder + binaryNumber
+        decimalNumber = decimalNumber / 2
+    END WHILE
+    RETURN binaryNumber
+END FUNCTION
