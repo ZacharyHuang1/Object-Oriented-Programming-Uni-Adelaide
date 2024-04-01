@@ -1,8 +1,8 @@
 #include <iostream>
-#include "parkinglot.h"
-#include "car.h"
-#include "bus.h"
-#include "motorbike.h"
+#include "Parkinglot.h"
+#include "Car.h"
+#include "Bus.h"
+#include "Motorbike.h"
 
 int main() {
     ParkingLot lot(10);
