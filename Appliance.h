@@ -10,8 +10,8 @@ public:
     void turnOff();
     virtual double getPowerConsumption();
 
-    int get_PowerRating();
-    void set_PowerRating(int powerRating);
+    int get_powerRating();
+    void set_powerRating(int powerRating);
     bool get_isOn();
 
 private:

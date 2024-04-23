@@ -5,11 +5,11 @@ int main() {
     Appliance fridge(500);
     Appliance TV;
 
-    std::cout << "Fridge power rating: " << fridge.get_PowerRating() << " watts" << std::endl;
-    std::cout << "TV power rating: " << TV.get_PowerRating() << " watts" << std::endl;
+    std::cout << "Fridge power rating: " << fridge.get_powerRating() << " watts" << std::endl;
+    std::cout << "TV power rating: " << TV.get_powerRating() << " watts" << std::endl;
 
     fridge.turnOn();
-    TV.set_PowerRating(200);
+    TV.set_powerRating(200);
     TV.turnOn();
 
     std::cout << "\nFridge is on: " << fridge.get_isOn() << std::endl;

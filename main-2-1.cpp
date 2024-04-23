@@ -4,7 +4,7 @@
 int main() {
     Fridge fridge(500, 300);
 
-    std::cout << "Fridge power rating: " << fridge.get_PowerRating() << " watts" << std::endl;
+    std::cout << "Fridge power rating: " << fridge.get_powerRating() << " watts" << std::endl;
     std::cout << "Fridge volume: " << fridge.getVolume() << " liters" << std::endl;
 
     fridge.turnOn();

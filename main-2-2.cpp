@@ -4,7 +4,7 @@
 int main() {
     TV tv(200, 55);
 
-    std::cout << "TV power rating: " << tv.get_PowerRating() << " watts" << std::endl;
+    std::cout << "TV power rating: " << tv.get_powerRating() << " watts" << std::endl;
     std::cout << "TV screen size: " << tv.getScreenSize() << " inches" << std::endl;
 
     tv.turnOn();
