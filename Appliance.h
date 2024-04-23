@@ -5,6 +5,7 @@ class Appliance {
 public:
     Appliance();
     Appliance(int powerRating);
+    virtual ~Appliance();
 
     void turnOn();
     void turnOff();

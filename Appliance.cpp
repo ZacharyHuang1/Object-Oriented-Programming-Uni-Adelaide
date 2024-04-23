@@ -1,6 +1,6 @@
 #include "Appliance.h"
 
-Appliance::Appliance() {
+Appliance::~Appliance() {
     powerRating = 0;
     isOn = false;
 }

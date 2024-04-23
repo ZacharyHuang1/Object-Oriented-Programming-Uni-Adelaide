@@ -2,21 +2,22 @@
 #include "Appliance.h"
 
 int main() {
-    Appliance fridge(500);
-    Appliance TV;
+    Appliance* appliance = new Appliance(100);
 
-    std::cout << "Fridge power rating: " << fridge._getPowerRating() << " watts" << std::endl;
-    std::cout << "TV power rating: " << TV._getPowerRating() << " watts" << std::endl;
+    std::cout << "Initial power rating: " << appliance->_getPowerRating() << std::endl;
+    appliance->_setPowerRating(200);
+    std::cout << "New power rating: " << appliance->_getPowerRating() << std::endl;
 
-    fridge.turnOn();
-    TV._setPowerRating(200);
-    TV.turnOn();
+    appliance->turnOn();
+    std::cout << "Is appliance on? " << appliance->_isOn() << std::endl;
 
-    std::cout << "\nFridge is on: " << fridge._isOn() << std::endl;
-    std::cout << "TV is on: " << TV._isOn() << std::endl;
+    appliance->turnOff();
+    std::cout << "Is appliance on? " << appliance->_isOn() << std::endl;
 
-    std::cout << "\nFridge power consumption: " << fridge.getPowerConsumption() << " watts" << std::endl;
-    std::cout << "TV power consumption: " << TV.getPowerConsumption() << " watts" << std::endl;
+    appliance->turnOn();
+    std::cout << "Is appliance on? " << appliance->_isOn() << std::endl;
+
+    delete appliance;
 
     return 0;
 }
