@@ -1,6 +1,6 @@
 #include "Appliance.h"
 
-Appliance::~Appliance() {
+Appliance::Appliance() {
     powerRating = 0;
     isOn = false;
 }
@@ -22,14 +22,14 @@ double Appliance::getPowerConsumption() {
     return 0.0;
 }
 
-int Appliance::_getPowerRating() {
+int Appliance::get_PowerRating() {
     return powerRating;
 }
 
-void Appliance::_setPowerRating(int powerRating) {
+void Appliance::set_PowerRating(int powerRating) {
     this->powerRating = powerRating;
 }
 
-bool Appliance::_isOn() {
+bool Appliance::get_isOn() {
     return isOn;
 }

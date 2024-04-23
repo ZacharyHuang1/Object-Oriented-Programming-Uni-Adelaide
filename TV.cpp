@@ -8,15 +8,15 @@ TV::TV(int powerRating, double screenSize) : Appliance(powerRating) {
     this->screenSize = screenSize;
 }
 
-double TV::_getScreenSize() {
+double TV::getScreenSize() {
     return screenSize;
 }
 
-void TV::_setScreenSize(double screenSize) {
+void TV::setScreenSize(double screenSize) {
     this->screenSize = screenSize;
 }
 
 double TV::getPowerConsumption() {
-    int powerRating = _getPowerRating();
+    int powerRating = get_PowerRating();
     return powerRating * (screenSize / 10);
 }

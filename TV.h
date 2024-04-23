@@ -8,8 +8,8 @@ public:
     TV();
     TV(int powerRating, double screenSize);
 
-    double _getScreenSize();
-    void _setScreenSize(double screenSize);
+    double getScreenSize();
+    void setScreenSize(double screenSize);
 
     double getPowerConsumption() override;
 

@@ -5,15 +5,14 @@ class Appliance {
 public:
     Appliance();
     Appliance(int powerRating);
-    virtual ~Appliance();
 
     void turnOn();
     void turnOff();
     virtual double getPowerConsumption();
 
-    int _getPowerRating();
-    void _setPowerRating(int powerRating);
-    bool _isOn();
+    int get_PowerRating();
+    void set_PowerRating(int powerRating);
+    bool get_isOn();
 
 private:
     int powerRating;

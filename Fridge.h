@@ -8,8 +8,8 @@ public:
     Fridge();
     Fridge(int powerRating, double volume);
 
-    double _getVolume();
-    void _setVolume(double volume);
+    double getVolume();
+    void setVolume(double volume);
 
     double getPowerConsumption() override;
 

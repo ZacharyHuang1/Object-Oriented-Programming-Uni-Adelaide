@@ -2,26 +2,15 @@
 #include "Fridge.h"
 
 int main() {
-    Fridge* fridge = new Fridge(500, 300);
+    Fridge fridge(500, 300);
 
-    std::cout << "Initial power rating: " << fridge->_getPowerRating() << " watts" << std::endl;
-    std::cout << "Initial volume: " << fridge->_getVolume() << " litres" << std::endl;
+    std::cout << "Fridge power rating: " << fridge.get_PowerRating() << " watts" << std::endl;
+    std::cout << "Fridge volume: " << fridge.getVolume() << " liters" << std::endl;
 
-    fridge->_setVolume(150);
-    std::cout << "New volume: " << fridge->_getVolume() << " litres" << std::endl;
+    fridge.turnOn();
+    std::cout << "Fridge is on: " << fridge.get_isOn() << std::endl;
 
-    fridge->turnOn();
-    std::cout << "Is fridge on? " << fridge->_isOn() << std::endl;
-
-    fridge->turnOff();
-    std::cout << "Is fridge on? " << fridge->_isOn() << std::endl;
-
-    fridge->turnOn();
-    std::cout << "Is fridge on? " << fridge->_isOn() << std::endl;
-
-    std::cout << "Fridge power consumption: " << fridge->getPowerConsumption() << " watts" << std::endl;
-
-    delete fridge;
+    std::cout << "Fridge power consumption: " << fridge.getPowerConsumption() << " watts" << std::endl;
 
     return 0;
 }
