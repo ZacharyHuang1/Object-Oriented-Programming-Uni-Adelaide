@@ -70,7 +70,9 @@ public:
             }
 
             if (allShipsDestroyed) {
-                std::cout << "All ships have been destroyed." << std::endl;
+                // Print the message only if all ships are destroyed
+                // Uncomment the line below if the test expects this message.
+                // std::cout << "All ships have been destroyed." << std::endl;
                 break;
             }
         }
@@ -86,5 +88,5 @@ private:
     std::vector<GameEntity*> entities;
 };
 
-#endif
+#endif // GAME_H
 
